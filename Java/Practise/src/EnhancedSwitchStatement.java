@@ -25,13 +25,13 @@ public class EnhancedSwitchStatement {
         int switchvalue = 3;
 
         switch (switchvalue) {
-            case 1 -> System.out.println("Value was 1");
-            case 2 -> System.out.println("Value was 2");
-            case 3, 4, 5 -> {
+            case 1: System.out.println("Value was 1");
+            case 2: System.out.println("Value was 2");
+            case 3: {
                 System.out.println("Was a 3, a 4, or a 5");
                 System.out.println("Actuallyi it was a " + switchvalue);
             }
-            default -> System.out.println("Was not 1, 2, 3, 4, 5");
+            default: System.out.println("Was not 1, 2, 3, 4, 5");
         }
         System.out.println(getQuarter("December"));
 
